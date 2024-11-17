@@ -1,4 +1,4 @@
-# AI-Agent使用方法
+# AI-Agent
 
 AI-Agent是一个一键运行ai-agent的方法，由podman（或docker）环境和ai-agent.sh脚本组成。目前支持的Agent如下：
 
