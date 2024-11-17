@@ -1,0 +1,36 @@
+[defaults]
+preset = memgpt_chat
+persona = sam_pov
+human = basic
+
+[model]
+model = glm4
+model_endpoint = https://gitclone.com/aiit/ollama
+model_endpoint_type = vllm
+model_wrapper = chatml
+context_window = 8192
+
+[embedding]
+embedding_endpoint_type = local
+embedding_model = BAAI/bge-small-en-v1.5
+embedding_dim = 384
+embedding_chunk_size = 300
+
+[archival_storage]
+type = chroma
+path = /root/.memgpt/chroma
+
+[recall_storage]
+type = sqlite
+path = /root/.memgpt
+
+[metadata_storage]
+type = sqlite
+path = /root/.memgpt
+
+[version]
+memgpt_version = 0.3.22
+
+[client]
+anon_clientid = 00000000-0000-0000-0000-000000000000
+
