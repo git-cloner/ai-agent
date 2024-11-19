@@ -19,13 +19,14 @@ card_data = [
     {"title": "CodeFuse：软件开发工具类AI Agent", "link": "https://github.com/codefuse-ai/codefuse-chatbot",
         "description": "ai-agent.sh codefuse\npython3 start.py",
         "image_path": "https://gitclone.com/download1/ai-agent/Codefuse.png"},
-    {"title": "QAnything: 网易开源的检索增强应用", "link": "https://github.com/netease-youdao/QAnything", 
+    {"title": "QAnything: 网易开源的检索增强应用", "link": "https://github.com/netease-youdao/QAnything",
         "description": "ai-agent.sh qanything",
         "image_path": "https://gitclone.com/download1/ai-agent/QAnything.png"},
     {"title": "DB-GPT：检索增强型AI Agent(开发中)", "link": "", "description": "ai-agent.sh dbgpt",
         "image_path": "https://gitclone.com/download1/ai-agent/DB-GPT.png"},
-    {"title": "crewAI：多角色协作型AI Ageent(开发中)", "link": "", "description": "ai-agent.sh crewai",
-        "image_path": "https://gitclone.com/download1/ai-agent/crewAI.png"},
+    {"title": "Autogen：微软开源的开发类AI Agent", "link": "https://github.com/microsoft/autogen",
+        "description": "ai-agent.sh autogen",
+        "image_path": "https://gitclone.com/download1/ai-agent/Autogen.png"},
 ]
 
 
@@ -39,7 +40,7 @@ def create_card(title, link, description, image_path):
 st.set_page_config(
     page_title="AI Agent Hub",
     page_icon=" ",
-    layout="wide"
+    layout="centered"
 )
 
 
@@ -67,11 +68,15 @@ def init_sidebar():
         .st-emotion-cache-w3nhqi {display: none;} 
         .st-emotion-cache-13ln4jf {padding:3rem}
         .st-emotion-cache-kgpedg  {display: none;}
+        .stApp {  
+            max-width: 1200px;
+            margin: 0 auto;
+            min-width: 1000px;
+        }
         </style>  
         """,
         unsafe_allow_html=True
     )
-
 
 
 def init_agents():
