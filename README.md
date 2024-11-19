@@ -10,6 +10,8 @@ AI-Agent是一个一键运行ai-agent的方法，由podman（或docker）环境�
 | BabyAGI          | 任务分解型AGI应用，根据用户设定的任务自动分解任务，并逐步 | ai-agent.sh babyagi                   | 命令行交互             |
 | Camel            | 多角色扮演完成用户设定的任务                              | ai-agent.sh camel                     | 命令行交互             |
 | CodeFuse-ChatBot | 软件开发工具类AI Agent                                    | ai-agent.sh codefuse python3 start.py | http://服务器IP:8501   |
+| QAnything        | 网易开源的RAG应用                                         | ai-agent.sh qanything                 | http://服务器IP:8501   |
+| Autogen          | 微软开源的开发类AI Agent                                  | ai-agent.sh autogen                   | http://服务器IP:8501   |
 
 ## 1、安装
 
