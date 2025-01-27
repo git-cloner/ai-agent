@@ -35,7 +35,7 @@ def init_sidebar():
         unsafe_allow_html=True
     )
     # 选择模型
-    model_options = ('glm4', 'llama3.2', 'gemma2',
+    model_options = ('glm4','deepseek-r1', 'llama3.2', 'gemma2',
                      'qwen2.5', 'phi3.5', 'mistral-small',
                      'deepseek-coder-v2')
     selected_model = st.sidebar.radio(
